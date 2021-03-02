@@ -1,4 +1,4 @@
-
+import retirement
 
 def list_functions():
 
@@ -17,7 +17,7 @@ def check_input():
 
     elif (function == "Retirement"):
 
-        print("Retirement()")
+        retirement.Retirement()
         list_functions()
 
     elif (function == "Exit"):
