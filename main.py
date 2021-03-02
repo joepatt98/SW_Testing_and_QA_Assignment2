@@ -4,6 +4,7 @@ def list_functions():
 
     print("\nPlease type a function name as it is listed below.")
     print("\nBMI\nRetirement\nExit\n")
+    
     check_input()
 
 def check_input():
