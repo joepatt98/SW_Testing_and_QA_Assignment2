@@ -12,7 +12,7 @@ def check_input():
 
     if (function == "BMI"):
 
-        BMI()
+        bmi.BMI()
         list_functions()
 
     elif (function == "Retirement"):
