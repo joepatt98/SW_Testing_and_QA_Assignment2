@@ -24,7 +24,20 @@ def Calculate_BMI(meters, kilograms):
 
     squared_meters = pow(meters, 2)
     BMI = math.ceil(kilograms / squared_meters)
-    print("\nBMI: ", BMI)
+
+    if (BMI < 18.5):
+        category = "Underweight"
+
+    elif (BMI >= 18.5 and BMI < 25):
+        category = "Normal weight"
+
+    elif (BMI >= 25 and BMI < 30):
+        category = "Overweight"
+
+    elif (BMI >= 30):
+        category = "Obese"
+
+    print("\nBMI: ", BMI, "\nCategory: ", category)
 
     return
 
