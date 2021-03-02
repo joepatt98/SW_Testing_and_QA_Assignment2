@@ -21,7 +21,7 @@ def check_input():
         list_functions()
 
     elif (function == "Exit"):
-
+        print("\n")
         return
 
     else:
