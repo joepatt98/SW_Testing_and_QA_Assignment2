@@ -1,4 +1,4 @@
-import math
+
 
 def Height_Input():
 
@@ -32,7 +32,7 @@ def Weight(pounds):
 def Calculate_BMI(meters, kilograms):
 
     squared_meters = pow(meters, 2)
-    BMI = math.ceil(kilograms / squared_meters)
+    BMI = int(kilograms / squared_meters)
 
     return BMI
 
@@ -50,16 +50,16 @@ def Calculate_Category(BMI):
     elif (BMI >= 30):
         category = "Obese"
 
-    print("\nBMI: ", BMI, "\nCategory: ", category)
-
-    return
+    return category
 
 def BMI():
+
     feet, inches = Height_Input()
     meters = Height(feet, inches)
     pounds = Weight_Input()
     kilograms = Weight(pounds)
     BMI = Calculate_BMI(meters, kilograms)
-    Calculate_Category(BMI)
+    category = Calculate_Category(BMI)
+    print("\nBMI: ", BMI, "\nCategory: ", category)
 
     return
