@@ -1,4 +1,5 @@
 import retirement
+import bmi
 
 def list_functions():
 
@@ -12,7 +13,7 @@ def check_input():
 
     if (function == "BMI"):
 
-        print("BMI()")
+        bmi.BMI()
         list_functions()
 
     elif (function == "Retirement"):
