@@ -3,7 +3,7 @@ import retirement
 def list_functions():
 
     print("\n*****  Please type a function name as it is listed below.  *****")
-    print("\n              BMI\n           Retirement\n              Exit\n")
+    print("\nBMI\nRetirement\nExit\n")
     check_input()
 
 def check_input():
