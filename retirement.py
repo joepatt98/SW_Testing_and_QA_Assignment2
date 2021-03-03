@@ -1,4 +1,4 @@
-
+import math
 
 def Input():
 
@@ -13,7 +13,7 @@ def Input():
 def Calculate_Retirement(age, salary, percent_saved, savings_goal):
 
     savings_per_year = salary * percent_saved * 1.35
-    years_til_goal = savings_goal // savings_per_year
+    years_til_goal = math.ceil(savings_goal / savings_per_year)
     age_when_goal_met = int(age + years_til_goal)
 
     return age_when_goal_met
@@ -22,18 +22,19 @@ def Output(age_when_goal_met):
 
     if (age_when_goal_met >= 100):
 
-        print("\nDeath will occur before goal is met at " + str(age_when_goal_met) + " years old.\n")
+        result = "\nDeath will occur before goal is met at "
 
     else:
 
-        print("\nGoal will be met at " + str(age_when_goal_met) + " years old.\n")
+        result = "\nGoal will be met at "
 
-    return
+    return result
 
 def Retirement():
 
     age, salary, percent_saved, savings_goal = Input()
     age_when_goal_met = Calculate_Retirement(age, salary, percent_saved, savings_goal)
-    Output(age_when_goal_met)
+    result = Output(age_when_goal_met)
+    print(result + age_when_goal_met + " years old.\n")
 
     return
