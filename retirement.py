@@ -7,7 +7,7 @@ def Input():
     salary = float(input("Salary (no commas): "))
     percent_saved = float(input("Percentage of salary saved (decimal form): "))
     savings_goal = float(input("Savings Goal (no commas): "))
-
+    #test comment
     return age, salary, percent_saved, savings_goal
 
 def Calculate_Retirement(age, salary, percent_saved, savings_goal):
