@@ -1,5 +1,9 @@
+from flask import Flask
 import retirement
 import bmi
+
+app = Flask(__name__)
+@app.route('/')
 
 def list_functions():
 
