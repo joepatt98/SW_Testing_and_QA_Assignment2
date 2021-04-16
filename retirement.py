@@ -30,11 +30,11 @@ def Output(age_when_goal_met):
 
     return result
 
-def Retirement():
+def Retirement(age, salary, percent_saved, savings_goal):
 
-    age, salary, percent_saved, savings_goal = Input()
+    #age, salary, percent_saved, savings_goal = Input()
     age_when_goal_met = Calculate_Retirement(age, salary, percent_saved, savings_goal)
     result = Output(age_when_goal_met)
-    print(result + age_when_goal_met + " years old.\n")
+    print_out = str(result) + str(age_when_goal_met) + " years old.\n"
 
-    return
+    return print_out
