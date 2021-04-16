@@ -3,13 +3,7 @@ python: "3.9"
 
 install:
     - pip install -r requirements.txt
-before_script:
-  - git clone https://github.com/z4r/python-coveralls-example.git
-  - cd python-coveralls-example
-  - git checkout -qf 17b8119796516195527dcb4f454a2ebd41d60244
-  - cd /home/travis/build/joepatt98/SW_Testing_and_QA_Assignment2/
+    - pip install codecov
 scripts:
     - pytest
-    - coveralls
-after_success:
-  - coveralls
+    - codecov
