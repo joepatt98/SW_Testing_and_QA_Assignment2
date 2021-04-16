@@ -52,14 +52,14 @@ def Calculate_Category(BMI):
 
     return category
 
-def BMI():
+def BMI(feet, inches, pounds):
 
-    feet, inches = Height_Input()
+    #feet, inches = Height_Input()
     meters = Height(feet, inches)
-    pounds = Weight_Input()
+    #pounds = Weight_Input()
     kilograms = Weight(pounds)
     BMI = Calculate_BMI(meters, kilograms)
     category = Calculate_Category(BMI)
-    print("\nBMI: ", BMI, "\nCategory: ", category)
+    #print("\nBMI: ", BMI, "\nCategory: ", category)
 
-    return
+    return BMI, category
