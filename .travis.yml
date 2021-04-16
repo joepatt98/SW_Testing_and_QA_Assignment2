@@ -3,7 +3,11 @@ python: "3.9"
 
 install:
     - pip install -r requirements.txt
+    - pip install -U pip
+    - pip install -U pytest
     - pip install codecov
+    - pip install ".[test]" .
 scripts:
     - pytest
+after_success:
     - codecov
