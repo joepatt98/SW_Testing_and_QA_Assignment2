@@ -7,6 +7,7 @@ before_script:
   - git clone https://github.com/z4r/python-coveralls-example.git
   - cd python-coveralls-example
   - git checkout -qf 17b8119796516195527dcb4f454a2ebd41d60244
+  - cd -
 scripts:
     - pytest
     - coveralls
