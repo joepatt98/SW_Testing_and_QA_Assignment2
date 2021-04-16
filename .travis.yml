@@ -1,4 +1,7 @@
 language: python
-script:
-  - pytest
-  - pylint
+python: "3.9"
+
+install:
+    - pip install -r requirements.txt
+scripts:
+    - pytest --pylint
